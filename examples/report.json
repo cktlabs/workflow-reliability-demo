@@ -1,0 +1,89 @@
+{
+  "simulation": true,
+  "results": [
+    {
+      "orders": [
+        {
+          "order_id": "order-001",
+          "amount_minor": 150000,
+          "currency": "RUB",
+          "status": "paid",
+          "provider_reference": "mock-d06f264e953e503d"
+        }
+      ],
+      "jobs": [
+        {
+          "kind": "charge",
+          "state": "done",
+          "attempts": 1
+        },
+        {
+          "kind": "notify",
+          "state": "done",
+          "attempts": 1
+        }
+      ],
+      "provider_effects": 1,
+      "accepted_notifications": 1,
+      "accepted_input_events": 1,
+      "scenario": "duplicate-request",
+      "passed": true
+    },
+    {
+      "orders": [
+        {
+          "order_id": "order-001",
+          "amount_minor": 150000,
+          "currency": "RUB",
+          "status": "paid",
+          "provider_reference": "mock-d06f264e953e503d"
+        }
+      ],
+      "jobs": [
+        {
+          "kind": "charge",
+          "state": "done",
+          "attempts": 2
+        },
+        {
+          "kind": "notify",
+          "state": "done",
+          "attempts": 1
+        }
+      ],
+      "provider_effects": 1,
+      "accepted_notifications": 1,
+      "accepted_input_events": 1,
+      "scenario": "worker-restart",
+      "passed": true
+    },
+    {
+      "orders": [
+        {
+          "order_id": "order-001",
+          "amount_minor": 150000,
+          "currency": "RUB",
+          "status": "paid",
+          "provider_reference": "mock-d06f264e953e503d"
+        }
+      ],
+      "jobs": [
+        {
+          "kind": "charge",
+          "state": "done",
+          "attempts": 1
+        },
+        {
+          "kind": "notify",
+          "state": "done",
+          "attempts": 3
+        }
+      ],
+      "provider_effects": 1,
+      "accepted_notifications": 1,
+      "accepted_input_events": 1,
+      "scenario": "webhook-outage",
+      "passed": true
+    }
+  ]
+}

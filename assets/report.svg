@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="610" viewBox="0 0 1200 610" role="img" aria-labelledby="title desc">
+<title id="title">CKT Labs: integration reliability demo</title>
+<desc id="desc">Three executed synthetic scenarios: duplicate input, worker restart, and webhook outage. Each produces one order, one mock charge, and one accepted notification.</desc>
+<rect width="1200" height="610" rx="18" fill="#04070e"/>
+<g font-family="Segoe UI,Arial,sans-serif">
+<text x="36" y="50" font-size="19" font-weight="600" fill="#01ffc3">CKT LABS / ENGINEERING EXAMPLE</text>
+<text x="36" y="96" font-size="32" font-weight="700" fill="#fff">Failures happen. The business operation stays consistent.</text>
+<g transform="translate(36 140)">
+<rect width="1128" height="112" rx="12" fill="#101b2c" stroke="#253249"/>
+<text x="22" y="34" font-size="23" font-weight="600" fill="#fff">Duplicate request</text>
+<text x="22" y="62" font-size="16" fill="#a3b4c9">The same input arrives three times</text>
+<text x="22" y="91" font-size="15" fill="#a3b4c9">Attempts: provider 1 / notification 1</text>
+<text x="555" y="47" font-size="24" fill="#fff">1 order</text>
+<text x="700" y="47" font-size="24" fill="#fff">1 mock charge</text>
+<text x="910" y="47" font-size="24" fill="#fff">1 notice</text>
+<text x="1040" y="90" font-size="17" font-weight="700" fill="#01ffc3">PASS</text>
+</g>
+<g transform="translate(36 272)">
+<rect width="1128" height="112" rx="12" fill="#101b2c" stroke="#253249"/>
+<text x="22" y="34" font-size="23" font-weight="600" fill="#fff">Worker restart</text>
+<text x="22" y="62" font-size="16" fill="#a3b4c9">Crash after provider success, then restart</text>
+<text x="22" y="91" font-size="15" fill="#a3b4c9">Attempts: provider 2 / notification 1</text>
+<text x="555" y="47" font-size="24" fill="#fff">1 order</text>
+<text x="700" y="47" font-size="24" fill="#fff">1 mock charge</text>
+<text x="910" y="47" font-size="24" fill="#fff">1 notice</text>
+<text x="1040" y="90" font-size="17" font-weight="700" fill="#01ffc3">PASS</text>
+</g>
+<g transform="translate(36 404)">
+<rect width="1128" height="112" rx="12" fill="#101b2c" stroke="#253249"/>
+<text x="22" y="34" font-size="23" font-weight="600" fill="#fff">Webhook outage</text>
+<text x="22" y="62" font-size="16" fill="#a3b4c9">Two delivery failures, then recovery</text>
+<text x="22" y="91" font-size="15" fill="#a3b4c9">Attempts: provider 1 / notification 3</text>
+<text x="555" y="47" font-size="24" fill="#fff">1 order</text>
+<text x="700" y="47" font-size="24" fill="#fff">1 mock charge</text>
+<text x="910" y="47" font-size="24" fill="#fff">1 notice</text>
+<text x="1040" y="90" font-size="17" font-weight="700" fill="#01ffc3">PASS</text>
+</g>
+<text x="36" y="575" font-size="17" fill="#a3b4c9">Executed locally · Synthetic orders · Mock provider · No real payments or network calls</text>
+</g></svg>

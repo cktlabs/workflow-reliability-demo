@@ -1,0 +1,25 @@
+name: Verify demo
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ['3.11', '3.12', '3.13']
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: actions/setup-python@v7.0.0
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -m unittest -v
+      - run: python demo.py --output artifacts
+      - name: Check reproducible report
+        run: |
+          python -c "from pathlib import Path; assert Path('artifacts/report.json').read_bytes() == Path('examples/report.json').read_bytes(); assert Path('artifacts/report.svg').read_bytes() == Path('assets/report.svg').read_bytes()"
