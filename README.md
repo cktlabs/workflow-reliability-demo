@@ -47,4 +47,4 @@ python -m unittest -v
 
 Платёжные интеграции, создание заказов, обработка событий и доставка уведомлений. Конкретные гарантии зависят от API внешних систем и согласованных правил восстановления.
 
-**[Обсудить вашу интеграцию](https://t.me/cktlabs)** · [Написать основателю](mailto:nickolaychekotko@gmail.com) · [Портфолио CKT Labs](https://github.com/cktlabs/portfolio)
+**[Обсудить вашу интеграцию](mailto:nickolaychekotko@gmail.com?subject=CKT%20Labs%20%E2%80%94%20GitHub%20project)** · [Контакты на сайте](https://cktlabs.ru/ru/contact?utm_source=github&utm_medium=showcase&utm_campaign=project_inquiry) · [Портфолио CKT Labs](https://github.com/cktlabs/portfolio)

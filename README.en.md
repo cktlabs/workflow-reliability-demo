@@ -47,4 +47,4 @@ The run writes `report.json` and a visual `report.svg` into `artifacts/`. Tempor
 
 Payment integrations, order creation, event processing, and notifications. Actual guarantees depend on external APIs and agreed recovery procedures.
 
-**[Discuss your integration](mailto:nickolaychekotko@gmail.com)** · [Telegram](https://t.me/cktlabs) · [CKT Labs portfolio](https://github.com/cktlabs/portfolio/blob/main/README.en.md)
+**[Discuss your integration](mailto:nickolaychekotko@gmail.com)** · [Telegram channel](https://t.me/cktlabs) · [CKT Labs portfolio](https://github.com/cktlabs/portfolio/blob/main/README.en.md)
